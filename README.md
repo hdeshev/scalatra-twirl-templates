@@ -1,6 +1,6 @@
 # Scalatra and Twirl Templates
 
-Using Twirl templates in Scalatra is absurdly easy and it's way better than Scalate.
+Using [Twirl](https://github.com/spray/twirl) templates in Scalatra is absurdly easy and it's way better than Scalate.
 
 The `index.scala.html` sample template takes a single parameter while the `TwirlViews` servlet knows how to render it.
 
