@@ -1,0 +1,31 @@
+@(name: String)
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  
+    <title>Twirl powa!</title>
+    <style type="text/css" media="screen">
+      .anon-hint {
+        margin: 10px;
+        padding: 10px;
+        border: 2px dotted black;
+        width: 300px;
+        background-color: hotpink;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome @name!</h1>
+
+    And here we have our first Twirl template.
+    @if(name == "Anonymous") {
+    <form method="GET" action="/" class="anon-hint">
+      Your name: <input type="text" name="name">
+    </form>
+    }
+  </body>
+</html>
