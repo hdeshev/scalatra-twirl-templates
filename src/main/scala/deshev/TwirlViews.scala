@@ -13,4 +13,17 @@ class TwirlViews extends ScalatraServlet {
     val name = params.get("name").getOrElse("Anonymous")
     views.txt.index(name = name)
   }
+
+  get("/auto-content-type") {
+    autoContent {
+      //views.html.index(name = "Auto-content-type")
+      views.txt.index(name = "Auto-content-type")
+    }
+  }
+
+  def autoContent(template: => twirl.api.Content) = {
+    val rendered = template
+    contentType = rendered.contentType
+    rendered
+  }
 }
