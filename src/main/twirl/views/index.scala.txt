@@ -1,0 +1,7 @@
+@(name: String)
+Welcome @name!
+
+And here we have our first Twirl template.
+@if(name == "Anonymous") {
+Pass your name as ?name=<name> just for fun.
+}
